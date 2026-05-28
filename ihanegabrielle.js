@@ -18,6 +18,10 @@ app.get('/contato',(req, res) => {
 app.get('/inicio', (req,res) => {
   res.redirect('/')
 })
+app.get('/usuarios/:id', (req,res) => {
+  console.log(req.params.id); 
+  res.send('usuario encontrado');
+});
 
 
 app.listen(
