@@ -22,6 +22,10 @@ app.get('/usuarios/:id', (req,res) => {
   console.log(req.params.id); 
   res.send('usuario encontrado');
 });
+app.get('/produtos/:nome', (req,res) => {
+  console.log(req.params.nome)
+  res.send(req.params.nome)
+})
 
 
 app.listen(
