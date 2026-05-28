@@ -30,7 +30,10 @@ app.get('/filmes/:id/:nome', (req,res) => {
   console.log(req.params.id)
   console.log(req.params.nome)
   res.send(req.params.id + ' '  + req.params.nome )
-
+})
+app.get('/buscar', (req, res) => {
+  console.log(req.query.nome); //games
+  
 })
 
 
